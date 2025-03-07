@@ -1,11 +1,12 @@
 #drips{
     text-align: center;
-    margin: 0px;
     padding: 5px;
+    margin: 0px;
     background-color: purple;
     color: black;
     display: flex;
     border-style: solid;
+    font-size: 5px;
 }
 
 .flex{
