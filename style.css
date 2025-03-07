@@ -1,9 +1,11 @@
 #drips{
-    margin: 0px;
+    text-align: center;
     padding: 5px;
+    margin: 0px;
     background-color: purple;
     color: black;
     display: flex;
+    border-style: solid;
 }
 
 .flex{
