@@ -15,15 +15,15 @@
 
 .banner{
 text-align: center;
-background-color: whitesmoke;
+background-color:black;
 padding: 30px;
 
 }
 body{
 
-background-color: whitesmoke;
+background-color:black;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+color: white;
 }
 .carousel{
  display: flex;
@@ -49,14 +49,15 @@ height: 400px;
 padding: 30px;
 text-align: center;
 
+
 }
 .produto{
-    background-color: whitesmoke;
+    background-color:white;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px,4px, 6px, rgb(0,0,0.1, green, blue);
     text-align: center;
-    
+    color: black;
 }
 .produto:hover {
     transform: scale(1.05);
