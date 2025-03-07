@@ -12,8 +12,11 @@
     display: flex;
 }
 
-.centralizar{
-    text-align: center;
+.banner{
+text-align: center;
+background-color:beige;
+padding: 30px;
+
 }
 body{
 
@@ -21,15 +24,17 @@ background-color: whitesmoke
 
 }
 .carousel{
-    
-display: flex;  
-text-align: left;
-margin: 300px;
+ display: flex;
+
+margin: 100px;
 
 }
 .carousel.img{
 width: 100px;
 height: 400px;
 
+
+}
+#navbar{
 
 }
