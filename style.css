@@ -5,6 +5,7 @@
     background-color: purple;
     color: black;
     display: flex;
+    border-style: solid;
 }
 
 .flex{
