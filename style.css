@@ -5,6 +5,11 @@
     color: black;
     display: flex;
 }
+
+.flex{
+    display: flex;
+}
+
 .centralizar{
     text-align: center;
 }
