@@ -25,18 +25,7 @@ background-color:black;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color: white;
 }
-.carousel{
- display: flex;
 
-margin: 100px;
-
-}
-.carousel.img{
-width: 100px;
-height: 400px;
-
-
-}
 
 .grid {
     display: flex;
@@ -60,6 +49,7 @@ text-align: center;
     color: black;
     word-wrap: break-word; 
     width: 200px; /*largura máxima*/
+    transition: transform 0.3s ease-in-out;
 }
 .produto:hover {
     transform: scale(1.05);
@@ -70,4 +60,30 @@ text-align: center;
     height: 150px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    width: 300%;
+    animation: slide 9s infinite alternate ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex: 1;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
 }
