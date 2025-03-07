@@ -63,27 +63,70 @@ text-align: center;
 }
 
 .carousel {
+    position: relative;
     width: 100%;
     max-width: 600px;
     overflow: hidden;
-    position: relative;
     margin: auto;
     border-radius: 10px;
 }
 
-.carousel-container {
+/* 🔹 Contêiner das imagens */
+.carousel-images {
     display: flex;
     width: 300%;
-    animation: slide 9s infinite alternate ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+/* 🔹 Cada slide */
+.carousel-item {
     width: 100%;
     flex: 1;
 }
 
-.slide img {
+.carousel-item img {
     width: 100%;
     display: block;
     border-radius: 10px;
+}
+
+/* 🔹 Escondendo os inputs de rádio */
+input[type="radio"] {
+    display: none;
+}
+
+/* 🔹 Definindo os movimentos do carrossel */
+#slide1:checked ~ .carousel-images {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel-images {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-images {
+    transform: translateX(-200%);
+}
+
+/* 🔹 Criando os botões de navegação */
+.carousel-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-buttons label {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked + .carousel-images + .carousel-buttons label {
+    background-color: yellow;
 }
