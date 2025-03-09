@@ -63,70 +63,51 @@ text-align: center;
 }
 
 .carousel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 10px;
-}
-
-/* 🔹 Contêiner das imagens */
-.carousel-images {
     display: flex;
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    width: 100%;
 }
-
-/* 🔹 Cada slide */
 .carousel-item {
-    width: 100%;
-    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    min-width: 100%;
+    transition: transform 0.5s ease;
 }
 
-.carousel-item img {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-}
-
-/* 🔹 Escondendo os inputs de rádio */
 input[type="radio"] {
     display: none;
 }
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.carousel-nav label {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #ccc;
+    margin: 0 5px;
+    border-radius: 50%;
 
-/* 🔹 Definindo os movimentos do carrossel */
-#slide1:checked ~ .carousel-images {
+}
+#slide1:checked ~ .carousel {
     transform: translateX(0);
 }
-
-#slide2:checked ~ .carousel-images {
+#slide2:checked ~ .carousel {
     transform: translateX(-100%);
 }
+#slide3:checked ~ .carousel {
+    transform: translateX(-200%);}
+    #slide4:checked ~ .carousel {
+        transform: translateX(0);
+    }
+    
+    #slide5:checked ~ .carousel {
+        transform: translateX(-100%);
+    }
+    
+    #slide6:checked ~ .carousel {
+        transform: translateX(-200%);
+    }
 
-#slide3:checked ~ .carousel-images {
-    transform: translateX(-200%);
-}
-
-/* 🔹 Criando os botões de navegação */
-.carousel-buttons {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.carousel-buttons label {
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-input[type="radio"]:checked + .carousel-images + .carousel-buttons label {
-    background-color: yellow;
-}
