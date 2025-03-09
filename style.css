@@ -122,3 +122,4 @@ input[type="radio"] {
     #slide9:checked ~ .carousel {
         transform: translateX(-200%);
     }
+   
