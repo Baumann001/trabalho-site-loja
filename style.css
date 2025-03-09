@@ -122,16 +122,4 @@ input[type="radio"] {
     #slide9:checked ~ .carousel {
         transform: translateX(-200%);
     }
-    .carousel-nav {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-    }
     
-    .carousel-nav label {
-        cursor: pointer;
-        padding: 5px;
-        background-color: #ccc;
-        margin: 0 5px;
-        border-radius: 50%;
-    }
