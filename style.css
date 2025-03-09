@@ -104,10 +104,21 @@ input[type="radio"] {
     }
     
     #slide5:checked ~ .carousel {
-        transform: translateX(-100%);
+        transform: translateX(0);
     }
     
     #slide6:checked ~ .carousel {
         transform: translateX(-200%);
     }
-
+    
+    #slide7:checked ~ .carousel {
+        transform: translateX(0);
+    }
+    
+    #slide8:checked ~ .carousel {
+        transform: translateX(-100%);
+    }
+    
+    #slide9:checked ~ .carousel {
+        transform: translateX(-200%);
+    }
